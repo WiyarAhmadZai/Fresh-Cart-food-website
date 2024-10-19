@@ -1,0 +1,445 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+p{
+    color: rgb(102, 97, 97);
+}
+.menu{
+    margin-top: 3px;
+}
+.search-bar{
+    border: 1px solid green;
+    border-radius: 13px;
+    width: 100%;
+    padding: 0 0 0 1rem;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.search-bar input{
+    width: 95%;
+    border: none;
+    padding: 0.2rem;
+}
+.search-bar input:focus{
+    border: none;
+    outline: none;
+}
+
+.slider-container{  
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    
+    
+}
+.slider{
+    display: flex;
+    transition: transform 1s ease-in-out;
+    
+}
+.slide{
+    flex: 0 0 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0 4rem 5rem; 
+    
+}
+.slide p{
+    color: gray;
+}
+.slide h1,h4{
+    font-weight: bold;
+}
+.slide button{
+    font-size: 10px;
+    padding: 1rem;
+    height: 30px;
+}
+
+.slide-controlls{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    
+}
+.slide.active{
+    transform: translateX(0);
+}
+.prev-btn,.next-btn{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.5rem;
+}
+.side-card1{
+    border: none;
+    background:url(images/ad-banner-1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    line-height: 13px;
+    border-radius: 10px;
+}
+.side-card2{
+    border: none;
+    background:url(images/ad-banner-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    line-height: 13px;
+    border-radius: 10px;
+}
+.side-card1 h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.shop-card{
+    text-align: center;
+}
+.side-card2 h1{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.shop-card h2{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.shop-header h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 0.5rem;
+    color: black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.link-active{
+    background-color: green;
+    color: white;
+}
+.link-active:hover{
+    color: white;
+    background-color: rgb(14, 82, 14);
+}
+.new-products h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.new-products p{
+    font-size: 1rem;
+}
+.product-container{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    padding: 1rem;
+    box-shadow: 0 0 1px;
+    margin-bottom: 1rem;
+}
+.card p{
+    color: red;
+    font-weight: bold;
+}
+.card p span{
+    background-color: goldenrod;
+    color: black;
+}
+.card-main-img{
+    overflow: hidden;
+}
+.card-main-img img{
+    width: 100%;
+    transform: scale(1);
+    transition: all 500ms ease-in-out;
+}
+.card-main-img:hover img{
+    transform: scale(1.2);
+}
+.card-content h2{
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(91, 84, 84);
+}
+.card-stars{
+    display: flex;
+    gap: 10px;
+}
+.product-rate{
+    display: flex;
+    justify-content: space-between;
+}
+.card-stars i{
+    color: goldenrod;
+    font-size: 12px;
+}
+.card-stars p{
+    color: gray;
+}
+.product-rate p{
+    font-size: 12px;
+}
+.product-rate p span{
+    color: gray;
+    text-decoration: line-through;
+    background: none;
+}
+.product-rate h6{
+    font-size: 12px;
+    color: green;
+}
+.main-grocery-shop{
+    background-color: rgb(247, 244, 244);
+    padding: 2rem 2rem 2rem 3rem;
+    border-radius: 10px;
+}
+.main-grocery-shop h1{
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+.main-grocery-shop p{
+    font-weight: bold;
+}
+.main-grocery-shop img{
+    width: 90%;
+}
+.main-grocery-shop button{
+    padding: 10px;
+}
+.special-offer-week h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.special-offer-week p{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+.special-offers-container{
+    border: 1px solid red;
+    padding: 0%;
+}
+.special-offers-container .rate{
+    color: rgb(118, 109, 109);
+}
+.card-content1{
+    text-align: center;
+}
+.class-icons{
+    display: flex;
+    justify-content: center;
+}
+.in-stock{
+    color: green;
+    font-size: 13px;
+    font-weight: bold;
+}
+.display-f{
+    display: flex;
+    justify-content: center;
+}
+.special-offers-container .card{
+    border-right: 1px solid black;
+    box-shadow: none;
+    border-radius: none;
+    line-height: 10px;
+    margin-bottom: 10px;
+    padding: 2rem;
+}
+.special-offers-container .card .buy{
+    font-size: 12px;
+}
+.special-offers-container .card span {
+    background-color: blue;
+    color: white;
+    padding: 1px;
+}
+.special-offers-container .card .card-main-img{
+    width: 50%;
+    align-self: center;
+}
+.special-offers-container .card .available-products{
+    color: gray;
+    font-size: 12px;
+}
+.best-sallers-products {
+    display: flex;
+    justify-content: center;
+    line-height: 12px;
+}
+.best-sallers-products p{
+    font-size: 12px;
+}
+.best-sallers-products .card-main-img{
+    text-align: center;
+}
+.best-sallers-products .card-main-img img{
+    width: 80%;
+}
+.best-sallers-products .card-content  .card-stars i ,p,.product-rate p, h6{
+    font-size: 10px;
+}
+.best-sallers-products .card-content h2{
+    margin-top: 1rem;
+    font-size: 14px;
+}
+.best-sallers-products button{
+    width: 100%;
+    border-radius: 20px;
+}
+.top-deals{
+    background: url(images/pattern.svg);
+    background-color: rgb(2, 39, 46);
+    color: white;
+    padding: 0 2rem;
+    line-height: 12px;
+}
+.top-deals p{
+    color: white;
+}
+.top-deals h2{
+    font-size: 1.5rem;
+}
+.top-deals input{
+    margin-top: 1.5rem;
+    width: 70%;
+    height: 45px;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.top-deals input:focus{
+    outline: none;
+}
+.top-deals img{
+    width: 70%;
+}
+.footer h3{
+    font-size: 12px;
+    font-weight: bold;
+}
+.footer p{
+    line-height: 5px;
+    color: gray;
+    cursor: pointer;
+}
+.footer-logos{
+    align-items: center;
+    gap: 1rem;
+}
+.footer-logos h2{
+    font-size: 12px;
+    margin-left: 1rem;
+}
+.footer-logos img{
+    width: 100px;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+.copyright span{
+    color: green;
+}
+.copyright ul li{
+    color: gray;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:426px){
+   .footer p{
+    line-height: 0px;
+    font-size: 7px;
+   }
+   .copyright p{
+    font-size: 7px;
+   }
+   .copyright ul li{
+    font-size: 10px;
+   }
+   .new-products h1, .special-offer-week  h1{
+    font-size: 1.4rem;
+   }
+   .new-products p, .special-offer-week p{
+    font-size: 12px;
+   }
+   .navigation a{
+    font-size: 10px;
+   }
+   
+}
+
+@media screen and (max-width:769px) {
+    .menu{
+        display: none;
+    }
+    .slide{
+        padding: 5rem 0 4rem 2rem;
+    }
+    .slide p,h6,h4{
+        font-size: 12px;
+    }
+    .slide h1{
+        font-size: 1rem;
+    }
+    .top-deals img{
+        margin-top: 3.5rem;
+    }
+    .top-deals img{
+        width: 100%;
+    }
+    
+    
+    
+}
+@media screen and (min-width:769px) {
+   
+    .search-bar{
+        display: none;
+    }
+}
+@media screen and (min-width:1025px){
+    .search-bar{
+        display: block;
+    }
+}
+@media screen and (min-width:1441px){
+    .navigation a{
+        font-size: 14px;
+    }
+    .top-deals{
+        padding-top: 6rem;
+    }
+     
+}
